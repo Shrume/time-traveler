@@ -7,11 +7,11 @@
 }
 
 body {
-	background-color: yellow;
+	background-color: rgb(173, 173, 173);
 	font-family: sans-serif;
 }
 h1 {
-	margin: 20px;
+	
 }
 h2 {
 	margin: 20px;
