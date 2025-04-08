@@ -6,16 +6,48 @@
 	margin: 0;
 }
 
-@font-face {
-	font-family: "Limkin";
-	src: url("assets/TMT-LimkinVF.ttf");
-}
 
 body {
-	font-family: "Limkin", serif;
-	font-variation-settings: "wght" 500, "SRFF" 100;
-	background: white;
-	background-size: 100vw 100vh;
+	font-family: sans-serif;
+	background: #fafafa;
+	padding: 20px;
+}
+
+.vertical-box {
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.child-box {
+	overflow: hidden;
+	max-height: 60px;
+	transition: all 0.6s ease-in-out;
+	padding: 20px;
+	background-color: #cacaca;
+	border-radius: 12px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.child-box h2{
+	font-size: 1.2em;
+	margin: 0;
+	align-self: center;
+}
+
+.child-box p{
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.child-box:hover {
+	max-height: 1000px;
+	background-color: white;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.child-box:hover p{
+	opacity: 1;
 }
 
 .hidden {
@@ -36,4 +68,10 @@ ul {
 }
 li {
 	margin: 20px;
+}
+
+@media (max-width:600px) {
+	.child-box{
+		padding: 16px;
+	}
 }
