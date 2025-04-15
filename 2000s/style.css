@@ -6,6 +6,13 @@
 	margin: 0;
 }
 
+nav{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding-top: 20px;
+}
+
 body {
 	background-color: rgb(0, 0, 0);
 	font-family: sans-serif;
@@ -45,7 +52,7 @@ body {
 	display: block;
 }
 h1 {
-	
+	font-weight: bold;
 }
 h2 {
 	font-size: 20px;
